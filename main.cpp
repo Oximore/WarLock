@@ -8,7 +8,7 @@ using namespace std ;
 int main()
 {
   Grid * grid = new Grid(5,5,2);
-  
+  grid->print();
   
   
   
