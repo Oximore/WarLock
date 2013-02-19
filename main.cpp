@@ -10,7 +10,7 @@ int main()
   cout << "Bienvenue !" << endl;
 
   Grid * grid = new Grid(5,5,2);
-  grid->print();
+  //  grid->print();
   
   
   
