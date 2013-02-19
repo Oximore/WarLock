@@ -37,9 +37,9 @@ void Grid::resDep(int moveJ1, int moveJ2){
 void Grid::print(){
   int var_tmp;
   
-  for(int i=0 ; i<m_dimX ; i++){
-    for(int j=0 ; j<m_dimY ; j++){
-      
+  
+   for(int j=0 ; j<m_dimY ; j++){
+     for(int i=0 ; i<m_dimX ; i++){
       if (m_Entities[i][j] == NULL)
 	var_tmp = 9;
       else
