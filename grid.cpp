@@ -24,3 +24,21 @@ Grid::Grid(int dimX,int dimY,int nbPlayer)
 	}
 
 }
+
+
+void print(){
+  int var_tmp;
+  
+  for(int i=0 ; i<m_dimX ; i++){
+    for(int j=0 ; j<m_dimY ; j++){
+      
+      if (m_Entities[i][j] == NULL)
+	var_tmp = 0;
+      else
+	var_tmp = m_Entities[i][j].getId();
+      
+      cout << var_tmp;
+    }
+    cout << endl;
+  }
+}
