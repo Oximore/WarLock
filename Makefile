@@ -1,10 +1,13 @@
 
 
-all: a.out
 
-a.out:
-	g++ coord.cpp entity.cpp grid.cpp main.cpp player.cpp
+all: Warlock
+
+Warlock: main.cpp coord.cpp entity.cpp grid.cpp player.cpp
+	g++ main.cpp coord.cpp entity.cpp grid.cpp player.cpp -o Warlock
+
 
 
 clean:
-	rm *.gch
+	-rm *.gch
+	-rm Warlock
