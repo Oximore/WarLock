@@ -7,6 +7,8 @@ using namespace std ;
 
 int main()
 {
+  cout << "Bienvenue !" << endl;
+
   Grid * grid = new Grid(5,5,2);
   grid->print();
   
@@ -17,7 +19,7 @@ int main()
   int deplacementJoueur1 = 0;
   int deplacementJoueur2 = 0;
   
-  while(gameOver) {
+  while(!gameOver) {
     
     grid->print();
     cout << "Déplacement (de 1 à 9): ..." << endl;
