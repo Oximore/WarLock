@@ -7,9 +7,12 @@ using namespace std;
 
 Grid::Grid(int dimX,int dimY,int nbPlayer)
 {
+
 	m_dimX=dimX;
 	m_dimY=dimY;
+
 	m_Entities=new Entity**[dimX];
+		
 	for(int i=0;i<m_dimX;i++)
 	{
 		m_Entities[i]=new Entity*[dimY];
@@ -20,11 +23,16 @@ Grid::Grid(int dimX,int dimY,int nbPlayer)
 	} 	
 	for(int i=0;i<nbPlayer;i++)
 	{
-	m_Entities[i*5][3]=new Player(Coord(i*5,3),15,i);
+	m_Entities[i*4][2]=new Player(Coord(i*4,2),15,i);
+
 	}
 
 }
 
+void Grid::resDep(int moveJ1, int moveJ2){
+	
+	
+}
 
 void Grid::print(){
   int var_tmp;
@@ -33,7 +41,7 @@ void Grid::print(){
     for(int j=0 ; j<m_dimY ; j++){
       
       if (m_Entities[i][j] == NULL)
-	var_tmp = 0;
+	var_tmp = 9;
       else
 	var_tmp = m_Entities[i][j]->getId();
       
