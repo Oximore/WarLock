@@ -1,4 +1,0 @@
-WarLock
-=======
-
-A game

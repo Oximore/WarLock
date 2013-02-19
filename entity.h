@@ -4,7 +4,7 @@
 class Entity
 {
 public :
-
+int getId();
 
 protected :
 int m_Hp;
