@@ -12,6 +12,6 @@ Entity *** m_Entities ;
 public :
 Grid(int dimX,int dimY,int nbPlayer);
 void print();
-void resDep();
+void resDep(int , int );
 };
 #endif
